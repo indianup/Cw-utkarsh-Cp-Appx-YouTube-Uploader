@@ -33,22 +33,22 @@ getstatusoutput(f"wget {photo1} -O 'photo.jpg'")
 photo = "photo.jpg"
 
 credit ="Alex:)™~" 
-OWNER = int(os.environ.get("OWNER", 7081036509))
+OWNER = int(os.environ.get("OWNER", 5082207960))
 try: 
     ADMINS=[] 
-    for x in (os.environ.get("ADMINS", "7081036509 5702090016").split()):  
+    for x in (os.environ.get("ADMINS", "5082207960").split()):  
         ADMINS.append(int(x)) 
 except ValueError: 
         raise Exception("Your Admins list does not contain valid integers.") 
 ADMINS.append(OWNER)
 
 bot = Client("bot",    
-   bot_token="7451364068:AAHuhmL_f1XsLkMOSIIJSeGCIVB7_fqmicM",    
-   api_id= 20346550,    
-   api_hash= "bc79c3bea7a626887bdc0871eecf0327"
+   bot_token="7792194200:AAElNlF0_k_xtx1oBw5Tq9SFGZi7jiyi9DQ",    
+   api_id= 23634056,    
+   api_hash= "f2debf49c2f57bad88086ecd17cb5df3"
 )
 
-@bot.on_message(filters.command(["started"]))    
+@bot.on_message(filters.command(["start"]))    
 async def account_login(bot: Client, m: Message):    
     editable = await m.reply_text("**👋 ʜᴇʟʟᴏ!\n🌟ɪ ᴀᴍ ᴛxᴛ ꜰɪʟᴇ ᴅᴏᴡʟᴏᴀᴅᴇʀ ʙᴏᴛ** \n\n❤️‍🔥 **ᴘʀᴇꜱꜱ /Ak47 ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ ʙʏ ᴛxᴛ**\n\n❤️‍🩹 **ᴊᴏɪɴ ᴏᴜʀ <a href='https://t.me/'>ᴛᴇʟᴇɢʀᴀᴍ ᴄʜᴀɴɴᴇʟ</a>** \n\n<pre>💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : https://t.me/ScmersHell</pre>\n-═════━‧₊˚❀༉‧₊˚.━═════-") 
 
@@ -80,7 +80,7 @@ async def download_pdf(url, filename):
         raise
 
 
-@bot.on_message(filters.command(["Sorry"]))    
+@bot.on_message(filters.command(["txt"]))    
 async def account_login(bot: Client, m: Message):    
     editable = await m.reply_text('**-═════━‧₊˚❀༉‧₊˚.━═════-\n📝 ꜱᴇɴᴅ ᴛxᴛ ꜰɪʟᴇ ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ**\n-═════━‧₊˚❀༉‧₊˚.━═════-')
     input: Message = await bot.listen(editable.chat.id)
